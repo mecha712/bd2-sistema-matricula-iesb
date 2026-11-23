@@ -79,12 +79,13 @@ SET timezone TO 'America/Sao_Paulo';
 -- =====================================================================
 
 
+    CREATE TYPE tp_status_matricula   AS ENUM ('MATRICULADO', 'TRANCADO', 'CANCELADO', 'CONCLUIDO');
+CREATE TYPE tp_situacao_historico AS ENUM ('CURSANDO', 'APROVADO', 'REPROVADO_NOTA', 'REPROVADO_FALTA');
+CREATE TYPE tp_situacao_aluno     AS ENUM ('ATIVO', 'TRANCADO', 'DESLIGADO', 'FORMADO');
+CREATE TYPE tp_turno              AS ENUM ('MATUTINO', 'VESPERTINO', 'NOTURNO');
+CREATE TYPE tp_grau               AS ENUM ('BACHARELADO', 'LICENCIATURA', 'TECNOLOGO');
+CREATE TYPE tp_tipo_sala          AS ENUM ('SALA', 'LABORATORIO', 'AUDITORIO');
 
-
-    AQUI
-
-
-      
 
 -- Tipo INTERVALO DE HORÁRIO (range de time). O PostgreSQL já tem ranges de
 -- número e de data; de hora não. Criamos um para o EXCLUDE de choque de sala:
