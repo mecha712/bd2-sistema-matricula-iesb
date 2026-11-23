@@ -34,10 +34,15 @@
 -- =====================================================================
 
 -- Recomeça limpo. CASCADE apaga junto tudo o que estiver dentro do schema.
-DROP SCHEMA IF EXISTS academico CASCADE;
-CREATE SCHEMA academico;
-COMMENT ON SCHEMA academico IS
-  'Sistema de Matrícula Acadêmica - Projeto BD II (CCO072) IESB 2026/2';
+
+
+
+
+aqui
+
+
+
+
 
 -- Extensões que vêm junto com o PostgreSQL (pacote contrib):
 --   btree_gist: permite usar "=" de números dentro de um índice GiST.
