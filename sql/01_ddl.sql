@@ -38,7 +38,10 @@
 
 
 
-aqui
+DROP SCHEMA IF EXISTS academico CASCADE;
+CREATE SCHEMA academico;
+COMMENT ON SCHEMA academico IS
+  'Sistema de Matrícula Acadêmica - Projeto BD II (CCO072) IESB 2026/2';
 
 
 
